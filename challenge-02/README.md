@@ -74,7 +74,7 @@ if(q !== undefined && w === undefined && r === undefined){
 return q;
 } else if(q !== undefined && w !== undefined && r === undefined){
 return q + w;
-} else if (q !== undefined && w !== undefiend && r !== undefined){
+} else if (q !== undefined && w !== undefined && r !== undefined){
 return q + w / r;
 } else if (q === undefined) {
 return false;
