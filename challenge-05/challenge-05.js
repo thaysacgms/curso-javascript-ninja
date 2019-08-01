@@ -40,8 +40,11 @@ var diferentes = [1, true, undefined, 'thaysa', 1.5]
 Invoque a função criada acima, fazendo-a retornar todos os valores do último
 array criado.
 */
-arrayfunction(diferentes, 4)
-[ 1, true, undefined, 'thaysa', 1.5 ]
+arrayfunction(diferentes, 0);
+arrayfunction(diferentes, 1);
+arrayfunction(diferentes, 2);
+arrayfunction(diferentes, 3);
+arrayfunction(diferentes, 4);
 
 /*
 Crie uma função chamada `book`, que recebe um parâmetro, que será o nome do
