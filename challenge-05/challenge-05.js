@@ -40,11 +40,11 @@ var diferentes = [1, true, undefined, 'thaysa', 1.5]
 Invoque a função criada acima, fazendo-a retornar todos os valores do último
 array criado.
 */
-arrayfunction(diferentes, 0);
-arrayfunction(diferentes, 1);
-arrayfunction(diferentes, 2);
-arrayfunction(diferentes, 3);
-arrayfunction(diferentes, 4);
+doisparam(diferentes, 0);
+doisparam(diferentes, 1);
+doisparam(diferentes, 2);
+doisparam(diferentes, 3);
+doisparam(diferentes, 4);
 
 /*
 Crie uma função chamada `book`, que recebe um parâmetro, que será o nome do
@@ -60,30 +60,52 @@ propriedades:
 - Se o parâmetro não for passado, a função deve retornar o objeto com todos
 os livros.
 */
-// ?
+// 
+function book(bookName) {
+
+var allBooks = {
+'Na cinza das horas': {
+quantidadePaginas: 432,
+autor: 'Jose de Assis',
+editora: 'Nova'
+},
+
+'Na noite veloz': {
+quantidadePaginas: 634,
+autor: 'Joao Andrade',
+editora: 'Conceito'
+}
+
+};
+
+if(!bookName) {
+return allBooks
+}
+return allBooks[bookName];
+}
 
 /*
 Usando a função criada acima, imprima o objeto com todos os livros.
 */
-// ?
+// console.log(book())
 
 /*
 Ainda com a função acima, imprima a quantidade de páginas de um livro qualquer,
 usando a frase:
 "O livro [NOME_DO_LIVRO] tem [X] páginas!"
 */
-// ?
+// console.log('O livro Na noite veloz tem ' + book('Na noite veloz').quantidadePaginas + ' paginas!')
 
 /*
 Ainda com a função acima, imprima o nome do autor de um livro qualquer, usando
 a frase:
 "O autor do livro [NOME_DO_LIVRO] é [AUTOR]."
 */
-// ?
+//  console.log('O autor do livro Na noite veloz é ' + book('Na noite veloz').autor)
 
 /*
 Ainda com a função acima, imprima o nome da editora de um livro qualquer, usando
 a frase:
 "O livro [NOME_DO_LIVRO] foi publicado pela editora [NOME_DA_EDITORA]."
 */
-// ?
+// console.log('O autor do livro Na noite veloz foi publicado pela editora ' + book('Na noite veloz').editora)
